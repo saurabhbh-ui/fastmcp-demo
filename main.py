@@ -21,7 +21,7 @@ def server_info() -> str:
         "version": "1.0.0",
         "description": "A basic MCP server with math tools",
         "tools": ["add_numbers", "randomization"],
-        "author": "Your Name"
+        "author": "Saurabh"
     }
     return json.dumps(info, indent=2)
 
