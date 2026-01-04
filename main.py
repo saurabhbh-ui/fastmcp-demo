@@ -1,7 +1,7 @@
 import random 
 from fastmcp import FastMCP
 
-mcp = FastMCP(name="Demo")
+mcp = FastMCP(name="Demo Local MCP server")
 
 @mcp.tool
 def randomization(n_dice) -> list[int]:
@@ -16,7 +16,9 @@ def add_numbers(a: int, b: int) -> str:
 
 
 if __name__ == "__main__":
-    mcp.run()
+    #mcp.run()
+    mcp.run(transport="http", host="0.0.0.0", port=8000)
+
 
 
 
